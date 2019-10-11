@@ -43,6 +43,7 @@ public class Stats : MonoBehaviour
     private void Start()
     {
         // We probably want to call our InitialStats function here.
+        InitialStats();
     }
 
     /// <summary>
@@ -53,6 +54,10 @@ public class Stats : MonoBehaviour
         Debug.LogWarning("Initial stats has been called");
         // We probably want to set out default level and some default random stats 
         // for our luck, style and rythmn.
+        level = (1);
+        style = Random.Range(0, 10);
+        luck = Random.Range(0, 10);
+        rhythm = Random.Range(0, 10);
     }
 
     /// <summary>

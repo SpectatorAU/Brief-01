@@ -35,6 +35,14 @@ public static class BattleHandler
         // if the npc has won, then the battle outcome is -1
         // otherwise the outcome is 0 and its a draw;
         battleOutcome = 1;
+        if (playerPoints > npcPoints)
+        {
+            Debug.Log("This is Ture")
+        }
+        else 
+
+
+
 
         // we probably want to do some sort of check here to see if the player has won...rather than assigning xp everytime.
         // if so set points.
